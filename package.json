@@ -1,0 +1,22 @@
+{
+  "name": "crypto-asset-management-system",
+  "version": "0.0.1",
+  "description": "Blockchain to manage crypto assets",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "Rcueva",
+  "email": "rcueva@kruger.com.ec",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}

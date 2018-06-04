@@ -1,0 +1,31 @@
+rule Default {
+    description: "Permitir a participantes acceso a recursos"
+    participant: "ANY"
+    operation: ALL
+    resource: "com.cams.**"
+    action: ALLOW
+}
+
+rule SystemACL {
+    description:  "Permitir acceso a recursos"
+    participant: "org.hyperledger.composer.system.Participant"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
+
+rule NetworkAdminUser {
+    description: "Permitir acceso total a administradores de sistema"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "**"
+    action: ALLOW
+}
+
+rule NetworkAdminSystem {
+    description: "Permitir acceso total a administradores de red"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
